@@ -1,89 +1,134 @@
-        body {
-            background-color: #f2f2f2;
-            font-family: 'Poppins', sans-serif;
-            height: 100%;
-        }
+body {
+    background-color: #f2f2f2;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+}
 
-        h1 {
-            font-size: 24px;
-            margin: 1rem;
-        }
+h1 {
+    font-size: 24px;
+    margin: 1rem;
+}
 
-        h2 {
-            font-size: 21px;
-            font-weight: 400;
-            margin: 1rem;
-        }
+h2 {
+    font-size: 21px;
+    font-weight: 400;
+    margin: 1rem;
+}
 
-        .cuerpo-principal {
-            background-color: #fff;
-            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7);
-            min-height: 100vh;
-        }
+h3{
+    font-size: 21px;
+    font-weight: 400;
+    margin: 0.8rem;
+}
 
-        header {
-            border-bottom: 1.6px #9e9e9e solid;
-        }
+.cuerpo-principal {
+    background-color: #fff;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7);
+    min-height: 100vh;
+}
 
-        .boton-registro {
-            border-radius: 15px 30px;
-            margin: 5px;
-            background-color: #b0b0b0;
-            border-color: #868e96;
-            color: #000;
-        }
+header {
+    border-bottom: 1.6px #9e9e9e solid;
+}
 
-        hr {
-            background-color: #9e9e9e;
-        }
+.boton-registro {
+    border-radius: 15px 30px;
+    margin: 5px;
+    background-color: #b0b0b0;
+    border-color: #868e96;
+    color: #000;
+}
 
-        .card-header {
-            cursor: pointer;
-        }
+hr {
+    background-color: #9e9e9e;
+}
 
-        .boton-header {
-            min-width: 30% !important;
-            margin-top: 27px !important;
-        }
+.card-header {
+    cursor: pointer;
+}
 
-        header {
-            background-color: #fff;
-        }
+.boton-header {
+    min-width: 30% !important;
+    margin-top: 27px !important;
+}
 
-        p{
-            font-size: 14px;
-        }
+header {
+    background-color: #fff;
+}
 
-        .nav-item{
-            list-style: none;
-            cursor: pointer;
-        }
+p{
+    font-size: 14px;
+}
 
-        .bg-gray{
-            background-color: #D4D2D2;
-        }
+.nav-item{
+    list-style: none;
+    cursor: pointer;
+}
 
-        a{
-            color: #212529;
-        }
+.bg-gray{
+    background-color: #D4D2D2;
+}
 
-        a:hover{
-            color: #212529;
-        }
+a{
+    color: #212529;
+}
 
-        .icono-principal{
-            font-size: 70px;
-            text-align: center;
-            margin-top: -20px;
-            margin-right: 10px;
-        }
-        
-        @media (min-width: 768px) { 
-            .icono-principal{
-                font-size: 90px;
-            }
-        } /*Tabletas*/
-        @media (max-width: 767px) { 
+a:hover{
+    color: #212529;
+}
 
-        } /*Celulares*/
-        
+#icono-principal{
+    text-align: center;
+    font-size: 100px;
+}
+
+#responsable{
+    width: 100px;
+}
+
+#video-principal{
+    width: 314px;
+    height: 176px;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    #icono-principal{
+        font-size: 120px;
+    }
+    #video-principal{
+        width: 492px;
+        height: 277px;
+    } 
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+    #video-principal{
+        width: 448px;
+        height: 252px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    #icono-principal{
+        margin-top: -25px;
+        font-size: 80px;
+        margin-right: 10px;
+    }
+    #responsable{
+        width: 140px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #icono-principal{
+        font-size: 90px;
+    }
+    #responsable{
+        width: 175px;
+    }
+}
