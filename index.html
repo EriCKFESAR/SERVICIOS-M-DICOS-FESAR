@@ -25,8 +25,8 @@
 
 <body>
     <div class="container cuerpo-principal">
-        <header class="sticky-top" style="margin-left: -15px; margin-right: -15px; padding-left: 15px;">
-            <div class="row nav rounded-top align-items-stretch justify-content-between" style="padding-bottom: 10px;margin-left: 0px;padding-top: 5px;">
+        <header class="sticky-top">
+            <div class="row nav rounded-top align-items-stretch justify-content-between bg-white" style="padding-bottom: 10px; padding-left: 15px;padding-top: 5px;">
                 <div class="d-flex align-items-center justify-content-center justify-content-lg-start" id="logo-custom">
                     <img src="img/logosunamfes.jpg" alt="UNAM, FES Arag&oacute;n" height="89" />
                 </div>
@@ -35,17 +35,20 @@
         <h1>SERVICIOS MÉDICOS</h1>
         <hr>
         <div class="row justify-content-center">
-            <div class="col-12 col-lg-10 d-flex justify-content-center bg-gray">
+            <div id="menu-rapido" class="col-12 col-lg-10 d-flex justify-content-center bg-gray">
                 <li class="nav-item">
-                    <a class="nav-link active">Inicio</a>
+                    <a onclick="go('inicio')" class="nav-link active">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active">Seguro de salud</a>
+                    <a onclick="go('requisitos')" class="nav-link active">Requisitos</a>
+                </li>
+                <li class="nav-item">
+                    <a onclick="go('seguro')" class="nav-link active">Seguro de salud</a>
                 </li>
             </div>            
         </div>
         
-        <div class="row justify-content-center">
+        <div id="inicio" class="row justify-content-center m-scroll">
             <div class="col-12 col-lg-10">
                 <h2>Servicio médico</h2>
                 <hr>
@@ -97,7 +100,7 @@
             </div>
         </div>
 
-        <div class="row mt-4 justify-content-center">
+        <div id="requisitos" class="row mt-4 justify-content-center m-scroll">
             <h2 class="col-12 col-lg-10">Nota sobre los requisitos:</h2>
             <div class="col-12 col-lg-5">
                 <hr>
@@ -125,7 +128,7 @@
                 </ul>
             </div>
         </div>
-        <div class="row justify-content-center">
+        <div id="seguro" class="row justify-content-center m-scroll">
             <div class="col-12 col-lg-10">
                 <hr>
                 <h2>Seguro de salud</h2>
@@ -135,9 +138,12 @@
                 </p>        
             </div>
         </div>
-
-        </div>
-        <!-- Bootstrap-JavaScript -->  
-               <script src="js/bootstrap.bundle.js"></script>
+    </div>
+    <!-- <Boton de ir a inicio de pagina> -->
+    <div id="icono-arriba"><i class="fas fa-arrow-circle-up"></i></div>
+    <!-- </Boton de ir a inicio de pagina> -->
+<!-- Bootstrap-JavaScript -->  
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>
