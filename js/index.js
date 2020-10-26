@@ -1,19 +1,23 @@
 const   target = document.getElementById('menu-rapido'),
-        btnArriba = document.getElementById('icono-arriba'),
-        menuRapido = document.getElementById('menu-rapido'),
+        btnArriba = document.getElementById('accion-subir'),
         hold = 1;
 
-function go(id){
+/* <Hace scroll a elemento en concreto> */
+function ir(id){
     let element = document.getElementById(id);
     element.scrollIntoView({block: "start", behavior: "smooth"});
 }
+/* </Hace scroll a elemento en concreto> */
 
+/* <Observa si el elemento ya no es visible en el viewport> */
 const observer = new IntersectionObserver(interseccion, {
     rootMargin: '-70px',
     threshold: hold
 });
 observer.observe(target);
+/* </Observa si el elemento ya no es visible en el viewport> */
 
+/* <Oculta o mustra el boton de accion en fincion del menu rapido> */
 function interseccion(events){
     let event = events[0];
     let visible = event.intersectionRatio >= hold;
@@ -25,9 +29,10 @@ function interseccion(events){
         btnArriba.classList.remove('oculto');
     }
 }
+/* </Oculta o mustra el boton de accion en fincion del menu rapido> */
 
 function irArriba(){
-    menuRapido.scrollIntoView({block: "end", behavior: "smooth"});
+    target.scrollIntoView({block: "end", behavior: "smooth"});
 }
 
 

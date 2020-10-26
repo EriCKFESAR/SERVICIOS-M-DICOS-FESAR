@@ -22,9 +22,10 @@
 
     <title>FES Arag&oacute;n, UNAM</title>
 </head>
-
 <body>
     <div class="container cuerpo-principal">
+        
+        <!-- <Cabecera> -->
         <header class="sticky-top">
             <div class="row nav rounded-top align-items-stretch justify-content-between bg-white" style="padding-bottom: 10px; padding-left: 15px;padding-top: 5px;">
                 <div class="d-flex align-items-center justify-content-center justify-content-lg-start" id="logo-custom">
@@ -32,103 +33,126 @@
                 </div>
             </div>
         </header>
+        <!-- </Cabecera> -->
+        
+        <!-- <Menu rapido> -->
         <h1>SERVICIOS MÉDICOS</h1>
         <hr>
-        <div class="row justify-content-center">
-            <div id="menu-rapido" class="col-12 col-lg-10 d-flex justify-content-center bg-gray">
-                <li class="nav-item">
-                    <a onclick="go('inicio')" class="nav-link active">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a onclick="go('requisitos')" class="nav-link active">Requisitos</a>
-                </li>
-                <li class="nav-item">
-                    <a onclick="go('seguro')" class="nav-link active">Seguro de salud</a>
-                </li>
+        <section class="row justify-content-center">
+            <div class="col-12 col-lg-10">
+                <nav class="bg-gray" id="menu-rapido">
+                    <ul class="d-flex justify-content-center flex-wrap p-0">
+                        <li class="nav-item">
+                            <a onclick="ir('inicio')" class="nav-link active">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a onclick="ir('responsable')" class="nav-link active">Responsable</a>
+                        </li>
+                        <li class="nav-item">
+                            <a onclick="ir('requisitos')" class="nav-link active">Requisitos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a onclick="ir('seguro')" class="nav-link active">Seguro de salud</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>            
-        </div>
-        
-        <div id="inicio" class="row justify-content-center m-scroll">
-            <div class="col-12 col-lg-10">
-                <h2>Servicio médico</h2>
-                <hr>
-            </div>
-        </div>
-        
-        <div class="row justify-content-center">
-            <div id="icono-principal" class="col-12 col-lg-1"><i class="fas fa-plus-square"></i></div>
-            <div class="col-12 col-lg-9">
-                <p class="text-justify">
-                    En la FES Aragón encontrarás Servicio médico, que te brindará atención de este tipo basada en un modelo de atención integral de salud en un primer nivel de prevención, el cual se orienta al fomento de la salud y la prevención de riesgos.
-                </p>
-            </div>
+        </section>
+        <!-- </Menu rapido> -->
 
-            <div class="col-12 col-lg-10">
-                <p class="text-justify">
-                    La principal función del servicio médico es la asistencial, ya que se enfoca a dar consulta médica a los alumnos de la FES Aragón, además de atender y canalizar situaciones de urgencias médicas suscitadas en la comunidad universitaria. Así mismo, contempla una función formativa ya que proporciona educación para la salud, brinda asesorías psicológicas, de alimentación, sexualidad a los alumnos y fomenta estilos de vida saludables.
-                </p>
-                <hr>
-            </div>
-        </div>
-
-        <div class="row mt-4 justify-content-center">
-            <div class="col-lg-6 col-xl-5">
-                <iframe id="video-principal" class="rounded mx-auto d-block" src="https://www.youtube.com/embed/yO2XC1TYAok" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
-            <div class="col-lg-4 col-xl-5 ">
-                <div class="row bg-gray mt-3 mt-lg-0">
-                    <div class="col-6 d-flex flex-column justify-content-around align-items-center">
-                        <img src="img/berenice-cano-santos.jpg" id="responsable" class="mt-3 rounded-circle" alt="">
-                        <h3 class="h5 mt-2 mb-0 text-center">Responsable</h3>
-                        <h4 class="h6 text-center">Berenice Cano Santos</h4>
-                    </div>
-                    <div class="col-6">
-                        <h3 class="h6 mt-3 mb-0">Horario</h3>
-                        <p class="mb-2 mb-xl-3">
-                            De lunes a viernes de 9:00 a 15:00 h y de 17:00 a 20:30 h
-                        </p>
-                        <h3 class="h6 mb-0">Teléfono(s)</h3>
-                        <p class="mb-2 mb-xl-3">
-                            55 5623 0995
-                        </p>
-                        <h3 class="h6 mb-0">Correo electrónico</h3>
-                        <p class="text-break">
-                            serviciomedico@aragon.unam.mx
-                        </p>
-                    </div>                
+        <!-- <Servicio medico> -->
+        <section id="inicio" class="m-scroll">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <h2>Servicio médico</h2>
+                    <hr>
                 </div>
             </div>
-        </div>
+            <div class="row justify-content-center">
+                <div id="icono-principal" class="col-12 col-lg-1"><i class="fas fa-plus-square"></i></div>
+                <div class="col-12 col-lg-9">
+                    <p class="text-justify">
+                        En la FES Aragón encontrarás Servicio médico, que te brindará atención de este tipo basada en un modelo de atención integral de salud en un primer nivel de prevención, el cual se orienta al fomento de la salud y la prevención de riesgos.
+                    </p>
+                </div>
+                <div class="col-12 col-lg-10">
+                    <p class="text-justify">
+                        La principal función del servicio médico es la asistencial, ya que se enfoca a dar consulta médica a los alumnos de la FES Aragón, además de atender y canalizar situaciones de urgencias médicas suscitadas en la comunidad universitaria. Así mismo, contempla una función formativa ya que proporciona educación para la salud, brinda asesorías psicológicas, de alimentación, sexualidad a los alumnos y fomenta estilos de vida saludables.
+                    </p>
+                    <hr>
+                </div>
+            </div>
+        </section>
+        <!-- </Servicio medico> -->
 
-        <div id="requisitos" class="row mt-4 justify-content-center m-scroll">
-            <h2 class="col-12 col-lg-10 mb-0">Nota sobre los requisitos:</h2>
-            <div class="col-12 col-lg-5">
-                <hr>
-                <h3>Para consulta:</h3>
-                <ul>
-                    <li>Credencial de la UNAM</li>
-                    <li>Registro en la computadora</li>
-                </ul>
-                <hr>
-                <h3>Aplicación de inyecciones:</h3>
-                <ul>
-                    <li>Credencial de la UNAM</li>
-                    <li>Receta del médico</li>
-                    <li>Medicamento</li>
-                    <li>Jeringa</li>
-                </ul>
+        <!-- <Video y responsable> -->
+        <section>
+            <div class="row mt-4 justify-content-center">
+                <div class="col-lg-6 col-xl-5">
+                    <iframe id="video-principal" class="rounded mx-auto d-block" src="https://www.youtube.com/embed/yO2XC1TYAok" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-4 col-xl-5 ">
+                    <div class="row bg-gray mt-3 mt-lg-0">
+                        <div class="col-6 d-flex flex-column justify-content-around align-items-center">
+                            <img src="img/berenice-cano-santos.jpg" id="responsable" class="mt-3 rounded-circle" alt="">
+                            <h3 class="h5 mt-2 mb-0 text-center">Responsable</h3>
+                            <h4 class="h6 text-center">Berenice Cano Santos</h4>
+                        </div>
+                        <div class="col-6">
+                            <h3 class="h6 mt-3 mb-0">Horario</h3>
+                            <p class="mb-2 mb-xl-3">
+                                De lunes a viernes de 9:00 a 15:00 h y de 17:00 a 20:30 h
+                            </p>
+                            <h3 class="h6 mb-0">Teléfono(s)</h3>
+                            <p class="mb-2 mb-xl-3">
+                                55 5623 0995
+                            </p>
+                            <h3 class="h6 mb-0">Correo electrónico</h3>
+                            <p class="text-break">
+                                serviciomedico@aragon.unam.mx
+                            </p>
+                        </div>                
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-lg-5">
-                <hr>
-                <h3>Constancia de salud:</h3>
-                <ul>
-                    <li>Credencial de la UNAM</li>
-                    <li>Tipo de sangre de un estudio de laboratorio</li>
-                    <li>Carnet de citas médicas con las vacunas de Tétanos y Hepatitis B.</li>
-                </ul>
+        </section>
+        <!-- </Video y responsable> -->
+        
+        <!-- <Notas sobre requisitos> -->
+        <section id="requisitos" class="m-scroll">
+            <div class="row mt-4 justify-content-center">
+                <h2 class="col-12 col-lg-10 mb-0">Nota sobre los requisitos:</h2>
+                <div class="col-12 col-lg-5">
+                    <hr>
+                    <h3>Para consulta:</h3>
+                    <ul>
+                        <li>Credencial de la UNAM</li>
+                        <li>Registro en la computadora</li>
+                    </ul>
+                    <hr>
+                    <h3>Aplicación de inyecciones:</h3>
+                    <ul>
+                        <li>Credencial de la UNAM</li>
+                        <li>Receta del médico</li>
+                        <li>Medicamento</li>
+                        <li>Jeringa</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <hr>
+                    <h3>Constancia de salud:</h3>
+                    <ul>
+                        <li>Credencial de la UNAM</li>
+                        <li>Tipo de sangre de un estudio de laboratorio</li>
+                        <li>Carnet de citas médicas con las vacunas de Tétanos y Hepatitis B.</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div id="seguro" class="row justify-content-center m-scroll">
+        </section>
+        <!-- </Notas sobre requisitos> -->
+
+        <!-- <Seguro de salud> -->
+        <section id="seguro" class="row justify-content-center m-scroll">
             <div class="col-12 col-lg-10">
                 <hr>
                 <h2>Seguro de salud</h2>
@@ -137,12 +161,15 @@
                     La comunidad estudiantil de la FES Aragón tiene derecho a afiliarse como derechohabiente al IMSS, para garantizar su protección médica.<br><br>Con el objetivo de facilitar el acceso a los servicios de salud de nuestra comunidad estudiantil, aquellos que se registren como usuarios de este servicio médico, con el cual tendrán acceso a atención médica y acciones preventivas (como certificados de salud, vacunas, métodos anticonceptivos, somatometría, signos vitales, papanicolaou) en Unidades de Medicina Familiar, así como atención hospitalaria en caso de urgencia.<br><br>Los requisitos para este servicio son ser estudiante activo de la comunidad universitaria de la Facultad y estar inscrito mínimo en una materia.<br><br>Puedes darte de alta vía electrónica o directamente en las Unidades de Medicina Familiar. Para obtener tu número de seguridad social puedes hacerlo vía Internet, en la página o bien, puedes acudir a tu Unidad de Medicina Familiar más cercana a tu domicilio con número de seguridad social, comprobante de domicilio reciente, credencial vigente de la UNAM o INE, dos fotografías tamaño infantil y constancia de estudios.<br><br>Ante cualquier duda, acude a Servicios a la Comunidad.
                 </p>        
             </div>
-        </div>
+        </section>
+        <!-- </Seguro de salud> -->
+
     </div>
 
-    <footer class="bg-dgray container rounded"></footer>
+    <footer class="bg-grey container rounded"></footer>
+
     <!-- <Boton de ir a inicio de pagina> -->
-    <div id="icono-arriba"><i class="fas fa-arrow-circle-up"></i></div>
+    <div id="accion-subir"><i class="fas fa-arrow-circle-up"></i></div>
     <!-- </Boton de ir a inicio de pagina> -->
 
 <!-- Bootstrap-JavaScript -->  
