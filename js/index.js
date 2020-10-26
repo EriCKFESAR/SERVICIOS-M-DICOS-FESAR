@@ -11,7 +11,7 @@ function ir(id){
 
 /* <Observa si el elemento ya no es visible en el viewport> */
 const observer = new IntersectionObserver(interseccion, {
-    rootMargin: '-70px',
+    rootMargin: "0px 0px -70px 0px",
     threshold: hold
 });
 observer.observe(target);
