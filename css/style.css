@@ -78,7 +78,7 @@ p, li{
 }
 
 .m-scroll{
-    scroll-margin-top: 100px; /* whatever is a nice number that gets you past the header */
+    scroll-margin-top: 90px; /* whatever is a nice number that gets you past the header */
 }
 
 a{

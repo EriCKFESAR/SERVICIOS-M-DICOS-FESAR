@@ -9,6 +9,7 @@ function go(id){
 }
 
 const observer = new IntersectionObserver(interseccion, {
+    rootMargin: '-70px',
     threshold: hold
 });
 observer.observe(target);
