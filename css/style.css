@@ -72,7 +72,7 @@ a,a:hover{
 }
 
 #responsable{
-    width: 100px;
+    width: 140px;
     scroll-margin-top: 125px;
 }
 
@@ -121,9 +121,6 @@ a,a:hover{
         margin-top: -25px;
         font-size: 80px;
         margin-right: 10px;
-    }
-    #responsable{
-        width: 140px;
     }
 }
 
