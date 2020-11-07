@@ -1,6 +1,6 @@
 const   target = document.getElementById('menu-rapido'),
         btnArriba = document.getElementById('accion-subir'),
-        hold = 1;
+        hold = 0.50;
 
 /* <Hace scroll a elemento en concreto> */
 function ir(id){
@@ -11,7 +11,7 @@ function ir(id){
 
 /* <Observa si el elemento ya no es visible en el viewport> */
 const observer = new IntersectionObserver(interseccion, {
-    rootMargin: "0px 0px -70px 0px",
+    rootMargin: "-70px 0px 0px 0px",
     threshold: hold
 });
 observer.observe(target);
